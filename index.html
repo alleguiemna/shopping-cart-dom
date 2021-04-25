@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js"></script>
+    <!-- <link 
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+      integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
+      crossorigin="anonymous"
+     /> -->
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <header id="header">
+      <h4><i class="fa fa-bars"></i>Home / Cart</h4>
+      <ul class="menu">
+        <li class="menu-item"><i class="fa fa-shopping-cart"></i>Cart</li>
+        <li class="menu-item"><i class="fa fa-envelope"></i>contact</li>
+        <li class="menu-item">
+        <i class="fa fa-user"></i>Account
+          <ul class="drop-menu">
+            <li class="drop-menu-item">Action</li>
+            <li class="drop-menu-item">another action</li>
+            <li class="drop-menu-item">something else here</li>
+          </ul>
+        </li>
+      </ul>
+    </header>
+    <main>
+      <table class="center">
+        <tr class="entete">
+          <th></th>
+          <th></th>
+          <th>product</th>
+          <th>Color</th>
+          <th>Size</th>
+          <th>Price</th>
+          <th>Quantité</th>
+          <th>Amount</th>
+          <th>Remove</th>
+        </tr>
+        <tr class="produit1">
+          <td><input type="checkbox" class="check" /></td>
+          <td>
+            <img
+              src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/shoes.jpg"
+            />
+            <span class="heart"><i class="fa fa-heart"></i></span>
+          </td>
+          <td>
+            <h5>Sportswear</h5>
+            <h6>by FifeSteps</h6>
+          </td>
+          <td class="color">Blue</td>
+          <td class="size">38</td>
+          <td>
+            <span id="price">200</span>
+          </td>
+          <td>
+            <button class="add" type="button" value="+">+</button>
+            <span id="quantity">0</span>
+            <button class="delete" type="button" value="-">-</button>
+          </td>
+          <td>
+            <span class="amount">0</span>
+          </td>
+          <td><button class="remove" type="button" value="x">x</button></td>
+        </tr>
+        <tr class="produit2">
+          <td><input type="checkbox" class="check" /></td>
+          <td>
+            <img
+              src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/sweater.jpg"
+            />
+            <span class="heart"><i class="fa fa-heart"></i></span>
+          </td>
+          <td>
+            <h5>Striped sweater</h5>
+            <h6>by FifeSteps</h6>
+          </td>
+          <td class="color">Blue</td>
+          <td class="size">L</td>
+          <td>
+            <span id="price">200</span>
+          </td>
+          <td class="quantity">
+            <button class="add" type="button" value="+">+</button>
+            <span id="quantity">0</span>
+            <button class="delete" type="button" value="-">-</button>
+          </td>
+          <td>
+            <span class="amount">0</span>
+          </td>
+          <td><button class="remove" type="button" value="x">x</button></td>
+        </tr>
+        <tr class="produit3">
+          <td><input type="checkbox" class="check" /></td>
+          <td>
+            <img
+              src="http://mdbootstrap.com/img/Photos/Horizontal/E-commerce/Products/tie.jpg"
+            />
+            <span class="heart"><i class="fa fa-heart"></i></span>
+          </td>
+          <td>
+            <h5>Elegant tie</h5>
+            <h6>by FifeSteps</h6>
+          </td>
+          <td class="color">Blue</td>
+          <td class="size">M</td>
+          <td class="price">
+            <span id="price">200</span>
+          </td>
+          <td class="quantity">
+            <button class="add" type="radio" value="+">+</button>
+            <span id="quantity">0</span>
+            <button class="delete" type="radio" value="-">-</button>
+          </td>
+          <td>
+            <span class="amount">0</span>
+          </td>
+          <td><button class="remove" type="button" value="x">x</button></td>
+        </tr>
+      </table>
+      <h3 >Total<span id="total" >0</span></h3>
+    </main>
+    <footer>
+      <div class="social-media">
+        SOCIAL MEDIA
+        <ul class="media1">
+          <div>
+          <li class="social-media-detail"><i class="fa fa-facebook"></i></li>
+          <li class="social-media-detail"><i class="fa fa-instagram"></i></li>
+          <li class="social-media-detail"><i class="fa fa-twitter"></i></li>
+        </div>
+        <div>
+          <li class="social-media-detail"><i class="fa fa-youtube"></i></li>
+          <li class="social-media-detail"><i class="fa fa-linkedin"></i></li>
+          <li class="social-media-detail"><i class="fa fa-pinterest"></i></li>
+        </div>
+        <div>
+          <li class="social-media-detail"><i class="fa fa-google-plus"></i></li>
+        </div>
+        </ul>
+      </div>
+        
+      <div class="delivery">
+        DELIVERY
+        <ul>
+          <li class="delivery-detail">Store Delivery</li>
+          <li class="delivery-detail">Inline Delivery</li>
+          <li class="delivery-detail">Delivery Terms &</li>
+          <li class="delivery-detail">Conditions</li>
+          <li class="delivery-detail">Tracking</li>
+        </ul>
+      </div>
+      <div class="need-help">
+        NEED HELP
+        <ul>
+          <li class="need-help-detail">FAQ</li>
+          <li class="need-help-detail">Contact Us</li>
+          <li class="need-help-detail">Return Policy</li>
+          <li class="need-help-detail">Product Registration</li>
+        </ul>
+      </div>
+      <div class="instagram-photo">
+        INSTAGRAM PHOTO
+        <ul class="photo">
+          <div class="inst1">
+          <li class="instagram-photo-detail">
+            <img
+              src="http://mdbootstrap.com/img/Photos/Avatars/img%20(9).jpg"
+              class="img1"
+            />
+          </li>
+          <li class="instagram-photo-detail">
+            <img
+              src="http://mdbootstrap.com/img/Photos/Avatars/img%20(20).jpg"
+              class="img2"
+            />
+          </li>
+          <li class="instagram-photo-detail">
+            <img
+              src="http://mdbootstrap.com/img/Photos/Avatars/img%20(19).jpg"
+              class="img3"
+            />
+          </li>
+        </div>
+        <div class="inst2">
+          <li class="instagram-photo-detail">
+            <img
+              src="http://mdbootstrap.com/img/Photos/Avatars/img%20(16).jpg"
+              class="img4"
+            />
+          </li>
+          <li class="instagram-photo-detail">
+            <img
+              src="http://mdbootstrap.com/img/Photos/Avatars/img%20(5).jpg"
+              class="img5"
+            />
+          </li>
+          <li class="instagram-photo-detail">
+            <img
+              src="http://mdbootstrap.com/img/Photos/Avatars/img%20(18).jpg"
+              class="img6"
+            />
+          </li>
+        </div>
+        <div class="inst3">
+          <li class="instagram-photo-detail">
+            <img
+              src="http://mdbootstrap.com/img/Photos/Avatars/img%20(15).jpg"
+              class="img7"
+            />
+          </li>
+          <li class="instagram-photo-detail">
+            <img
+              src="http://mdbootstrap.com/img/Photos/Avatars/img%20(17).jpg"
+              class="img8"
+            />
+          </li>
+        </div>
+        </ul>
+      </div>
+    </footer>
+    <p class="foot-end">© 2016 Copyright: MDBootstrap.com</p>
+    <script src="app.js"></script>
+  </body>
+</html>
